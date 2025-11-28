@@ -8,7 +8,7 @@ This repository contains Cypress end-to-end tests for SeamlessMD Pratical Test.
 cypress/
   ├── integration/
   │   └── examples/
-  │       ├── Test1.spec.js      # Post-Surgery Symptom Survey tests
+  │       ├── Test2A.spec.js     # Post-Surgery Symptom Survey tests
   │       └── Test2B.spec.js     # Login page validation tests
   └── support/
       ├── commands.js            # Custom login command
@@ -20,7 +20,7 @@ cypress/
 
 ## Test Files
 
-### Test1.spec.js
+### Test2A.spec.js
 - Post-Surgery Symptom Survey end-to-end test
 - Tests login, survey navigation, question answering, and submission
 
