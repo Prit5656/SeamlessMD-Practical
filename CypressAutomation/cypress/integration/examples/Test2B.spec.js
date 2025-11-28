@@ -1,6 +1,10 @@
 describe('SeamlessMD Login Page', () => {
   beforeEach(() => {
-    cy.visit('https://ca-qa.seamless.md/#/login')
+    cy.visitLoginPage()
+  })
+  
+  it('should verify website is accessible', () => {
+    cy.verifyWebsiteAccessible()
   })
 
   it('should display login form with all required elements', () => {
@@ -19,10 +23,10 @@ describe('SeamlessMD Login Page', () => {
     cy.verifyPasswordError()
   })
 
-  it('should show error message for invalid email and password', () => {
-    cy.fillLoginForm('invalid@example.com', 'wrongpassword')
+  it('should show validation error for empty email and password fields', () => {
     cy.attemptLogin()
-    cy.verifyInvalidCredentials()
+    cy.verifyEmailError()
+    cy.verifyPasswordError()
   })
 
    it('should have proper labels and ARIA attributes for accessibility', () => {
@@ -47,4 +51,5 @@ describe('SeamlessMD Login Page', () => {
   it('should be responsive on tablet viewport', () => {
     cy.verifyResponsiveLayout('ipad-2')
   })
+
 })

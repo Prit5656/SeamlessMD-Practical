@@ -2,7 +2,7 @@ import { goToSurvey, answerSurveyQuestions, submitSurvey } from '../../support/s
 
 describe('Post-Surgery Symptom Survey', () => {
   beforeEach(() => {
-    cy.visit('https://ca-qa.seamless.md/#/login')
+    cy.visitLoginPage()
   })
 
   it('completes symptom survey and redirects to dashboard', () => {

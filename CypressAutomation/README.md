@@ -1,6 +1,6 @@
 # Cypress Automation Test Suite
 
-This repository contains Cypress end-to-end tests for SeamlessMD Pratical Test.
+This repository contains Cypress tests for SeamlessMD Pratical Test.
 
 ## Project Structure
 
@@ -21,7 +21,7 @@ cypress/
 ## Test Files
 
 ### Test2A.spec.js
-- Post-Surgery Symptom Survey end-to-end test
+- Post-Surgery Symptom Survey 
 - Tests login, survey navigation, question answering, and submission
 
 ### Test2B.spec.js
